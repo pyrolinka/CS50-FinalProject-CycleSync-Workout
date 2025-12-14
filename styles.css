@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffe4f0, #ffd9eb);
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 30px rgba(255, 105, 180, 0.2);
+}
+
+h1 {
+    color: #ff1493;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.image-box {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.image-box img {
+    max-width: 200px;
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+form {
+    background: #fff5fa;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 30px 0;
+}
+
+label {
+    display: block;
+    color: #333;
+    font-weight: bold;
+    margin: 15px 0 8px 0;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ffb6d9;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background: linear-gradient(135deg, #ff69b4, #ff1493);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 105, 180, 0.3);
+}
+
+#results {
+    margin-top: 40px;
+}
+
+h2 {
+    color: #ff1493;
+    margin: 30px 0 15px 0;
+    font-size: 1.8em;
+}
+
+#totalTime {
+    color: #ff69b4;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.video-box {
+    background: #fff5fa;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.video-box h3 {
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.video-box p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+iframe {
+    border-radius: 10px;
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    background: #ff69b4;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+    font-size: 1.1em;
+}
