@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CycleSync Workout</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>CycleSync Workout</h1>
+        <p>Women train differently</p>
+
+        <!-- Reference Image -->
+        <div class="image-box">
+            <img src="https://cdn.shopify.com/s/files/1/0258/0509/4986/files/Efamol_Cycle_Syncing_Workouts.jpg?v=1711451387" alt="Cycle Phases">
+        </div>
+
+        <!-- Input Form -->
+        <form id="workoutForm">
+            <label>Cycle Phase:</label>
+            <select id="cyclePhase" required>
+                <option value="">Select phase</option>
+                <option value="menstrual">Menstrual</option>
+                <option value="follicular">Follicular</option>
+                <option value="ovulation">Ovulation</option>
+                <option value="luteal">Luteal</option>
+            </select>
+
+            <label>Fitness Level:</label>
+            <select id="fitnessLevel" required>
+                <option value="">Select level</option>
+                <option value="beginner">Beginner</option>
+                <option value="sporty">Sporty</option>
+            </select>
+
+            <button type="submit">Generate My Workout</button>
+        </form>
+
+        <!-- Results -->
+        <div id="results" style="display:none;">
+            <!-- Menstrual workout -->
+            <div id="menstrualWorkout" style="display:none;">
+                <h2>Gentle Movement</h2>
+                <p>Focus on gentle, restorative movement during menstruation.</p>
+                <div id="menstrual"></div>
+            </div>
+
+            <!-- Regular workout -->
+            <div id="regularWorkout" style="display:none;">
+                <h2>Warmup</h2>
+                <div id="warmup"></div>
+
+                <h2>Main Workout</h2>
+                <p id="totalTime"></p>
+                <div id="mainVideos"></div>
+
+                <h2>Stretch</h2>
+                <div id="stretch"></div>
+            </div>
+        </div>
+
+        <p class="footer">Listen to your body. Stay hydrated! 💧</p>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
